@@ -12,20 +12,21 @@ const App = ({ children }) => (
     </nav>
     <Router>
       <Home path="/" />
-      <Dashboard path="page2" />
+      <Dashboard path="page3" />
     </Router>
   </div>
 );
 
 const Home = () => (
   <div>
-    <h2>Welcome</h2>
+    This is generally for root index page.
+    <h2> Cannot reach here. </h2>
   </div>
 );
 
 const Dashboard = () => (
   <div>
-    <h2>Dashboard</h2>
+    <h2> Dashboard for Page3 </h2>
   </div>
 );
 
