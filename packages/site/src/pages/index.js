@@ -131,6 +131,7 @@ const NavBar = () => (
     <Link to="/page2"> Gatsby Page2 </Link>
     <Link to="/page3"> React Page3 </Link>
     <Link to="/theme1"> Gatsby Theme1 </Link>
+    <Link to="/theme1a"> Gatsby Theme1(import) </Link>
   </nav>
 );
 

@@ -7,10 +7,16 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+
+const pageStyles = {
+  color: "#232129",
+  padding: 96,
+  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+}
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,9 +29,24 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const NavBar = () => (
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/page2"> Gatsby Page2 </Link>
+      <Link to="/page3"> React Page3 </Link>
+      <Link to="/theme1"> Gatsby Theme1 </Link>
+      <Link to="/theme2"> Gatsby Theme2! </Link>
+    </nav>
+  );
+
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      
+      <main style={pageStyles}>
+        <NavBar />
+      </main>
+      
       <div
         style={{
           margin: `0 auto`,
