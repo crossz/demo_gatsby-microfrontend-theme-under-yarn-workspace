@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 
 const pageStyles = {
   color: "#232129",
@@ -123,9 +124,22 @@ const links = [
   },
 ]
 
+
+const NavBar = () => (
+  <nav>
+    <Link to="/">Home</Link>
+    <Link to="/page2"> Gatsby Page2 </Link>
+    <Link to="/page3"> React Page3 </Link>
+    <Link to="/theme1"> Gatsby Theme1 </Link>
+  </nav>
+);
+
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
+
+      <NavBar />
+      
       <h1 style={headingStyles}>
         Congratulations
         <br />
