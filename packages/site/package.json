@@ -31,6 +31,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.3.6",
-    "gatsby-theme-1": "*"
+    "gatsby-theme-1": "*",
+    "my-cra-app": "*"
   }
 }

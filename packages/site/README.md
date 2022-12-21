@@ -5,10 +5,14 @@
 - `/page3`: is a simple react component based page. Exported directly while not rended by react-dom.
 - `/page2`: is a Gatsby page, but with SEO as a React Component imported by this(/page2) Gatsby page. 
 - `theme1`: is a React Component, through a `Link` to `gatsby-theme-1`.
-- `theme1a`: inherits from `page2`, but with a React component import from a gatsby theme in `packages`. 
+- `theme1a`: inherits from `page2`, but with 
+  - a React component import from a gatsby theme in `packages`. 
+  - a Pure React component import from a CRA in `packages`.
+  
 
 ## Notes:
-1. `page3` is not a Gatsby page, so under `gatsby develop` navigating between such pages will always respond with 404. Once `build` and then under `gatsby serve` will be ok.
+1. importing from `packages` need an `index.js` under root with componets exproted!!!
+2. `page3` is not a Gatsby page, so under `gatsby develop` navigating between such pages will always respond with 404. Once `build` and then under `gatsby serve` will be ok.
 
 ---
 <p align="center">
