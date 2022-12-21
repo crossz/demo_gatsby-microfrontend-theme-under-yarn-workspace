@@ -6,7 +6,7 @@ module.exports = {
     title: `My Gatsby Site`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ['gatsby-theme-1', "gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  plugins: ['my-cra-app', 'gatsby-theme-1', "gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
