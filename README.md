@@ -10,6 +10,13 @@
   - a Pure React component import from a CRA in `packages`.
   
 
+### run it: 
+`yarn workspace site develop`
+
+### check it:
+最后一个 menu 项: http://localhost:8000/theme1a/
+
+
 ## Notes:
 1. importing from `packages` need an `index.js` under root with componets exproted!!!
 2. `page3` is not a Gatsby page, so under `gatsby develop` navigating between such pages will always respond with 404. Once `build` and then under `gatsby serve` will be ok.

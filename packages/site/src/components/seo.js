@@ -75,7 +75,7 @@ function Seo({ description, lang, meta, title }) {
 
   return (
     <Helmet
-      title="{title}"
+      title={title}
       meta={[
         {
           name: `description`,
